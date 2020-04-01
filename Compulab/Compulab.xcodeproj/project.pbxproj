@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		028BE49AD253D6A1E913A71A /* Pods_Compulab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8EBACD87D446751A8D7256 /* Pods_Compulab.framework */; };
 		D503A08123FC99D90053F99A /* RegistrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D503A08023FC99D90053F99A /* RegistrosViewController.swift */; };
+		D5103AFA24186A78000CEF15 /* HistorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5103AF924186A78000CEF15 /* HistorialViewController.swift */; };
 		D52435C52405C4F600A1CCC8 /* VerRegistrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52435C42405C4F600A1CCC8 /* VerRegistrosViewController.swift */; };
 		D55B543223E60350003AB3E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55B543123E60350003AB3E3 /* AppDelegate.swift */; };
 		D55B543423E60350003AB3E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55B543323E60350003AB3E3 /* SceneDelegate.swift */; };
@@ -29,6 +30,7 @@
 		4AA4D57C2EB9EE214FFD75E9 /* Pods-Compulab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Compulab.debug.xcconfig"; path = "Target Support Files/Pods-Compulab/Pods-Compulab.debug.xcconfig"; sourceTree = "<group>"; };
 		B188EFA2F72AB906A167B272 /* Pods-Compulab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Compulab.release.xcconfig"; path = "Target Support Files/Pods-Compulab/Pods-Compulab.release.xcconfig"; sourceTree = "<group>"; };
 		D503A08023FC99D90053F99A /* RegistrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrosViewController.swift; sourceTree = "<group>"; };
+		D5103AF924186A78000CEF15 /* HistorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorialViewController.swift; sourceTree = "<group>"; };
 		D52435C42405C4F600A1CCC8 /* VerRegistrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerRegistrosViewController.swift; sourceTree = "<group>"; };
 		D55B542E23E60350003AB3E3 /* Compulab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compulab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55B543123E60350003AB3E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				D55B544923E603D1003AB3E3 /* HomeViewController.swift */,
 				D503A08023FC99D90053F99A /* RegistrosViewController.swift */,
 				D52435C42405C4F600A1CCC8 /* VerRegistrosViewController.swift */,
+				D5103AF924186A78000CEF15 /* HistorialViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				D55B544A23E603D1003AB3E3 /* HomeViewController.swift in Sources */,
 				D55B545423E90E14003AB3E3 /* Constants.swift in Sources */,
 				D503A08123FC99D90053F99A /* RegistrosViewController.swift in Sources */,
+				D5103AFA24186A78000CEF15 /* HistorialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

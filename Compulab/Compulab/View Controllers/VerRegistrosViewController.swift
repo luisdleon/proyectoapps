@@ -29,12 +29,12 @@ class VerRegistrosViewController: UIViewController, UITableViewDataSource, UITab
         
         databaseHandle = ref?.child("Registros").observe(.childAdded, with: { (DataSnapshot) in
             
-            let post = DataSnapshot.value as? String
-            
-            if let actualpost = post {
-                self.postData.append(actualpost)
+            let post = DataSnapshot.value as? [String: Any]
+            let nombre = post!["Nombre"] as! String
+         
+                self.postData.append(nombre)
                 self.tableView.reloadData()
-            }
+            
             
         })
     }

@@ -14,6 +14,11 @@ import FirebaseDatabase
 
 class RegistrosViewController: UIViewController {
 var ref: DatabaseReference!
+    @IBOutlet weak var QRtextfield: UITextField!
+
+
+    @IBOutlet weak var QRImage: UIImageView!
+    
     @IBOutlet weak var descripciontxtfield: UITextField!
     @IBOutlet weak var fechatxtfield: UITextField!
     @IBOutlet weak var serietxtfield: UITextField!
@@ -43,7 +48,32 @@ var ref: DatabaseReference!
     }
     
     
+    @IBAction func QRbtn(_ sender: Any) {
+        if let myString = QRtextfield.text{
+            QRImage.image = generateQRCode(from: QRtextfield.text!)
+        } else {
+             QRImage.image = generateQRCode(from: "Intenta otravez")
+        }
+        
+    }
     
+    func generateQRCode(from string: String) -> UIImage? {
+        
+        let data = string.data(using: String.Encoding.ascii)
+        if let filter = CIFilter(name: "CIQRCodeGenerator"){
+            
+            filter.setValue(data, forKey: "inputMessage")
+            
+            let transform = CGAffineTransform(scaleX: 3, y: 3)
+            if let output = filter.outputImage?.transformed(by: transform){
+                
+                return UIImage(ciImage: output)
+            }
+            
+        }
+         
+        return nil
+    }
     
     
     /*
